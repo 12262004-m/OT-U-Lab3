@@ -24,7 +24,6 @@ def encrypt_vigenere(plaintext: str, keyword: str) -> str:
             ciphertext += elem
     return ciphertext
 
-
 def decrypt_vigenere(ciphertext: str, keyword: str) -> str:
     plaintext = ""
     while len(keyword) < len(ciphertext):

@@ -6,8 +6,8 @@ with open ("result.txt", "w") as f:
             ("PYTHON", "A", "PYTHON"),
             ("python", "a", "python"),
             ("introduction to python", "lsci", "tfvzzvwkeaqv lq aqvpzf"),
-            ("ATTACKATDAWN", "LEMON", "LXFOPVEFRNHR"),
-        ]
+            ("ATTACKATDAWN", "LEMON", "LXFOPVEFRNHR"), 
+            ]
     for i, (plaintext, keyword, chiphertext) in enumerate(cases1):
         if chiphertext == encrypt_vigenere(plaintext, keyword):
             f.write("Test completed" + "\n")
@@ -19,7 +19,7 @@ with open ("result.txt", "w") as f:
             ("python", "a", "python"),
             ("tfvzzvwkeaqv lq aqvpzf", "lsci", "introduction to python"),
             ("LXFOPVEFRNHR", "LEMON", "ATTACKATDAWN"),
-        ]
+            ]
     for i, (chiphertext, keyword, plaintext) in enumerate(cases2):
         if chiphertext == decrypt_vigenere(plaintext, keyword):
             f.write("Test completed" + "\n")
